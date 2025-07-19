@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="築藝彩色數位印刷，提供高品質彩色印刷、名片設計與客製服務。快速交件，精美呈現您的創意。">
+<meta name="keywords" content="彩色印刷, 名片印刷, 客製印刷, 苗栗印刷">
+  <title>築藝彩色數位印刷</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-scroll {
+      animation: scroll 30s linear infinite;
+    }
+    .animate-fadeIn {
+      animation: fadeIn 1.2s ease-in;
+    }
+    .animate-fadeUp {
+      animation: fadeUp 1.2s ease-in;
+    }
+    .animate-slideDown {
+      animation: slideDown 1s ease-out;
+    }
+  </style>
+ <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+
+<style>
+  .font-art {
+    font-family: 'ZCOOL KuaiLe', cursive;
+  }
+</style>
+</head>
+<body class="bg-white text-gray-800 animate-fadeIn">
+ <div class="md:block hidden fixed top-1/2 left-0 transform -translate-y-1/2 z-50 bg-teal-600 text-white rounded-r-xl shadow-lg">
+    <ul class="space-y-4 p-4 text-sm">
+      <li><a href="./idea/idea.html" class="block hover:underline">關於我們</a></li>
+      <li><a href="./product/product.html" class="block hover:underline">服務項目</a></li>
+      <li><a href="#portfolio" class="block hover:underline">作品展示</a></li>
+      <li><a href="#contact" class="block hover:underline">聯絡我們</a></li>
+    </ul>
+  </div>
+   <!-- Mobile Hamburger Menu -->
+  <div class="md:hidden fixed top-24 left z-50">
+    <button id="menuBtn" class="bg-teal-600 text-white p-2 rounded shadow">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
+    <div id="mobileMenu" class="hidden absolute top-12 left-0 bg-white text-gray-800 rounded shadow w-48">
+      <a href="./idea/idea.html" class="block px-4 py-2 hover:bg-gray-100">關於我們</a>
+      <a href="./product/product.html" class="block px-4 py-2 hover:bg-gray-100">服務項目</a>
+      <a href="#portfolio" class="block px-4 py-2 hover:bg-gray-100">作品展示</a>
+      <a href="#contact" class="block px-4 py-2 hover:bg-gray-100">聯絡我們</a>
+    </div>
+  </div>
+
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  <!-- Header -->
+  <header class="bg-blue-400 text-white py-6 px-4 shadow-md animate-slideDown">
+    <div class="max-w-7xl mx-auto flex items-center justify-between">
+      <div class="flex items-center gap-4">
+        <img src="./logo.png" alt="Joy Logo" class="h-12 w-auto" />
+        <h1 class="text-2xl font-bold tracking-wide">築藝彩色數位印刷</h1>
+      </div>
+      <nav class="hidden md:flex gap-6 font-semibold">
+        <a href="./idea/idea.html" class="hover:underline">About</a>
+        <a href="./product/product.html" class="hover:underline">Services</a>
+        <a href="#portfolio" class="hover:underline">Portfolio</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-r from-pink-100 via-purple-100 to-blue-100 py-20 px-6 text-center animate-fadeUp">
+    <h2 class="text-4xl md:text-5xl font-art text-teal-700 mb-6 drop-shadow-md animate-bounce">
+  印刷<br>是我們的藝術
+</h2>
+
+    <p class="italic md:text-xl max-w-2xl mx-auto">築構巧思作設計<br> 藝境幻真製印品<br>Joy 將您的創意完美實現</p>
+     <a href="https://lin.ee/AbAuW9V"><button class="mt-8 px-6 py-3 bg-teal-600 text-white rounded-full text-lg hover:bg-teal-700 transition">了解更多</button></a>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-16 px-6 bg-white">
+    <div class="max-w-6xl mx-auto text-center">
+      <a href="./product/product.html"><h3 class="text-3xl font-bold mb-12">我們的服務</h3></a>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="transition transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2">彩色數位印刷</h4>
+          <p>高品質彩色印刷，快速交件，精美呈現。</p>
+        </div>
+        <div class="transition transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2">名片與宣傳品</h4>
+          <p>設計與印刷一體化，助你打造專業形象。</p>
+        </div>
+        <div class="transition transform hover:scale-105 duration-300">
+          <h4 class="text-xl font-semibold mb-2">客製印刷服務</h4>
+          <p>各式尺寸、材質與工法，滿足各類需求。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="py-16 px-6 bg-gradient-to-r from-yellow-100 via-pink-100 to-purple-100">
+    <div class="max-w-6xl mx-auto text-center">
+      <h3 class="text-3xl font-bold mb-12">印刷作品展示</h3>
+      <div class="overflow-hidden relative">
+        <div class="flex animate-scroll whitespace-nowrap gap-6">
+          <img src="./printer1.jpg" alt="Sample 1" class="h-64 rounded-xl shadow-lg" />
+          <img src="./printer2.jpg" alt="Sample 2" class="h-64 rounded-xl shadow-lg" />
+          <img src="./printer3.jpg" alt="Sample 3" class="h-64 rounded-xl shadow-lg" />
+          <img src="./printer2.jpg" alt="Sample 4" class="h-64 rounded-xl shadow-lg" />
+          <img src="./printer1.jpg" alt="Sample 5" class="h-64 rounded-xl shadow-lg" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+ <section class="py-16 px-6 bg-white">
+  <div class="max-w-6xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-12">客戶好評</h3>
+    <div class="grid md:grid-cols-3 gap-6 mb-12">
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="./mslee.png" alt="User 1" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <p class="italic">「苗栗竹南築藝彩色印刷
+可以先打電話詢問內容
+加賴聯繫方便確認文件
+印刷品質很穩定又清晰
+服務人員態度又很親切
+價格很合理沒有亂加價
+製作速度快速又有效率
+整體合作經驗很不錯讚」</p>
+        <div class="mt-3 text-yellow-400 text-xl">★★★★★</div>
+        <p class="mt-2 text-sm text-gray-600">— 李小姐</p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="./mrchang.png" alt="User 2" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <p class="italic">「老闆很熱心而且很專業
+很有責任感且具有職人精神
+把東西印得非常的漂亮
+超級推薦來這裡列印」</p>
+        <div class="mt-3 text-yellow-400 text-xl">★★★★★</div>
+        <p class="mt-2 text-sm text-gray-600">— 張先生 </p>
+      </div>
+      <div class="bg-gray-50 p-6 rounded-xl shadow-md hover:shadow-lg transition">
+        <img src="./msk.png" alt="User 3" class="w-16 h-16 rounded-full mx-auto mb-4">
+        <p class="italic">「非常臨時要影印文宣
+找到了這家
+
+老闆會根據他的專業
+不會因為你要印就直接印
+如果解析度 或是成品出來不是很理想
+老闆會提供用他的想法給予意見
+真的很讚🥹🥹🥹🥹
+
+成品真的讓其他同事都讚嘆🥹
+非常推薦這一家
+老闆非常專業 闆娘非常親切
+出貨快速！大推😍」</p>
+        <div class="mt-3 text-yellow-400 text-xl">★★★★★</div>
+        <p class="mt-2 text-sm text-gray-600">— k小姐 / 小型創業者</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- Contact -->
+  <<section id="contact" class="py-16 px-6 bg-gray-100">
+  <div class="flex flex-col items-center">
+    <h3 class="text-2xl font-bold mb-6">我們的 Google Maps 位置</h3>
+    <a href="https://maps.app.goo.gl/v6UgBvDhpB6sY5n37?g_st=al">
+      <img src="./地圖.png" alt="Google Map" class="h-128 rounded-xl shadow-lg" />
+    </a>
+  </div>
+</section>
+
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-10 px-4">
+    <div class="max-w-7xl mx-auto text-center">
+      <p class="mb-4">&copy; 地址：苗栗縣竹南鎮福德路176號<br>電話：037-466540<br>郵件：joy.printer@msa.hinet.net</p>
+      <div class="flex justify-center">
+        <a href="https://lin.ee/AbAuW9V"><img src="./qrcode.jpg" alt="LINE QR Code" class="h-32 w-32 mx-auto rounded-md shadow-md" /></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
