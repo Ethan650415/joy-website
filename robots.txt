@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ethan650415.github.io/joy-website/sitemap.xml
